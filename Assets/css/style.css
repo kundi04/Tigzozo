@@ -1,0 +1,663 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --primary: white;
+  --secondary: black;
+}
+
+.dark-theme {
+  --primary: black;
+  --secondary: white;
+}
+
+body {
+  background-color: var(--primary);
+  overflow-x: hidden;
+}
+
+/*nav*/
+nav {
+  height: 10vh;
+  display: flex;
+  width: 100%;
+  padding: 0 100px;
+  margin-top: 20px;
+}
+nav ul {
+  display: flex;
+  margin-top: -60px;
+  position: absolute;
+  right: 250px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 18px;
+  padding-left: 50px;
+  font-family: regular;
+  position: relative;
+}
+nav ul li a:hover {
+  color: purple;
+}
+
+/*end of nav*/
+#hero {
+  height: 100vh;
+  margin-top: -100px;
+}
+#hero .container .row {
+  display: flex;
+  align-items: center;
+}
+#hero .container .row .txt {
+  margin-top: 180px;
+}
+#hero .container .row .txt h1 {
+  margin-bottom: 20px;
+  font-family: regular;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--secondary);
+}
+#hero .container .row .txt p {
+  margin-bottom: 20px;
+  font-family: regular;
+  font-size: 18px;
+  color: var(--secondary);
+}
+#hero .container .row .txt .btns {
+  margin-left: -15px;
+}
+#hero .container .row .txt .btns .btn1 {
+  margin: 18px;
+  width: 20vh;
+  height: 7vh;
+  font-family: regular;
+  font-size: 15px;
+  background-color: rgb(116, 34, 150);
+  color: white;
+  border-style: none;
+}
+#hero .container .row .txt .btns .btn2 {
+  margin: 20px;
+  width: 20vh;
+  height: 8vh;
+  font-family: regular;
+  font-size: 15px;
+  color: black;
+  background-color: white;
+  border-color: rgb(116, 34, 150);
+  border-right-width: 5px;
+  border-left-width: 5px;
+}
+#hero .container .row .txt .vid-icon {
+  font-family: regular;
+  font-size: 18px;
+}
+#hero .container .row .txt .vid-icon ul li {
+  color: var(--secondary);
+  margin-top: 10px;
+}
+#hero .container .row .txt .vid-icon ul li .list1 {
+  margin-left: 40px;
+}
+#hero .container .row .txt .vid-icon ul li:hover {
+  color: purple;
+}
+#hero .container .row .pict1 {
+  display: flex !important;
+}
+#hero .container .row .pict1 img {
+  padding: 0px 8px;
+  width: 70vh;
+}
+#hero .container .row .pict1 .im-1 {
+  margin-top: 80px;
+}
+
+#About {
+  height: auto !important;
+}
+#About .container .row {
+  display: flex !important;
+}
+#About .container .row h2 {
+  color: var(--secondary);
+  font-family: bold;
+  font-size: 25px;
+  font-weight: 700;
+}
+#About .container .row .abt {
+  margin-top: 30px;
+}
+#About .container .row .abt p {
+  width: 80vh;
+  font-size: 18px;
+  font-family: regular;
+  color: var(--secondary);
+}
+#About .container .row .abt .about-images {
+  margin-top: 30px;
+  display: flex;
+}
+#About .container .row .abt .about-images img {
+  width: 200px;
+  height: 300px;
+}
+#About .container .row .abt .about-images #im2 {
+  margin-top: 100px;
+}
+#About .container .row .abt2 {
+  margin-left: -60px;
+}
+#About .container .row .abt2 .video-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-bottom: 50%;
+  overflow: hidden;
+}
+#About .container .row .abt2 .video-container iframe {
+  position: absolute;
+}
+#About .container .row .abt2 p {
+  font-family: regular;
+  font-size: 16px;
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 70%;
+  color: var(--secondary);
+}
+#About .container .row .abt2 img {
+  margin-left: 40px;
+}
+#About .container .row .abt2 button {
+  margin-top: 20px;
+  margin-left: 40px;
+  width: 20vh;
+  height: 6vh;
+  font-family: regular;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(116, 34, 150);
+  border-style: none;
+}
+
+#title {
+  font-size: 25px;
+  font-family: bold;
+  color: var(--secondary);
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  position: relative;
+  width: 290px;
+  height: 400px;
+  margin: 0px 10px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .overlay2 {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.card .overlay2 h3 {
+  text-align: center;
+  font-family: bold;
+  font-size: 25px;
+  color: white;
+  padding-bottom: 10px;
+  bottom: 0;
+  margin-top: 120%;
+}
+.card .overlay2 #togglebtn {
+  display: block;
+  margin: 10% auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(116, 34, 150);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  color: white;
+}
+
+ol {
+  list-style: decimal;
+  margin: 0px 25px;
+  font-family: regular;
+  font-size: 20px;
+}
+ol li {
+  padding: 6px 0px;
+}
+
+.overlay h2 {
+  font-family: bold;
+  text-align: left;
+  font-size: 18px;
+  margin-left: 20px;
+  padding-top: 20px;
+  color: white;
+}
+
+.card:hover .overlay {
+  height: 100%;
+}
+
+#Testimonials {
+  height: 100vh;
+  width: 100%;
+  margin-top: 100px;
+}
+#Testimonials .container .row {
+  display: flex;
+}
+#Testimonials .container .row .part1 h2 {
+  color: var(--secondary);
+  font-family: regular;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#Testimonials .container .row .part1 h3 {
+  color: var(--secondary);
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  font-family: regular;
+  font-weight: bold;
+}
+#Testimonials .container .row .part1 .pone {
+  color: var(--secondary);
+  font-family: regular;
+  margin-left: 100px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#Testimonials .container .row .part1 .ptwo {
+  margin-left: 100px;
+  margin-top: 20px;
+  color: var(--secondary);
+  font-family: regular;
+  font-weight: 500;
+  font-size: 18px;
+}
+#Testimonials .container .row .part2 h3 {
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  color: var(--secondary);
+  font-family: regular;
+  font-size: 16px;
+  font-weight: bold;
+}
+#Testimonials .container .row .part2 .pone {
+  color: var(--secondary);
+  font-family: regular;
+  margin-left: 80px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#Testimonials .container .row .part2 .ptwo {
+  margin-left: 80px;
+  margin-top: 20px;
+  color: var(--secondary);
+  font-family: regular;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#Socials {
+  height: 100vh;
+  margin-top: 50px;
+}
+#Socials .container .row {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#Socials .container .row h2 {
+  text-align: center;
+  font-family: regular;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: var(--secondary);
+}
+#Socials .container .row h2 .pics .pic1 {
+  width: 300px;
+}
+#Socials .container .row .tag {
+  margin-top: 80px;
+  color: var(--secondary);
+  font-family: regular;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+#Socials .container .row button {
+  background-color: rgb(116, 34, 150);
+  color: white;
+  font-family: regular;
+  font-size: 16px;
+  border: none;
+  margin-top: 20px;
+  margin-left: 510px;
+  width: 20vh;
+  height: 8vh;
+}
+
+footer {
+  margin-top: 40vh;
+  height: 45vh;
+  background-color: rgb(116, 34, 150);
+}
+footer .container {
+  width: 100%;
+}
+footer .container .row {
+  display: flex;
+  padding-top: 50px;
+}
+footer .container .row .part1 .p1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: regular;
+  font-weight: normal;
+  font-size: 16px;
+}
+footer .container .row .part2 h3 {
+  color: white;
+  font-family: regular;
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .container .row .part2 hr {
+  color: white;
+  width: 20vh;
+}
+footer .container .row .part2 li {
+  color: white;
+  font-family: regular;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 6px 0px;
+}
+footer .container .row .part3 h3 {
+  color: white;
+  font-family: regular;
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .container .row .part3 hr {
+  color: white;
+  width: 20vh;
+}
+footer .container .row .part3 li {
+  color: white;
+  font-family: regular;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 6px 0px;
+}
+footer .container .row .part4 h3 {
+  color: white;
+  font-family: regular;
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .container .row .part4 hr {
+  color: white;
+  width: 20vh;
+}
+footer .container .row .part4 li {
+  color: white;
+  font-family: regular;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 6px 0px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .Ione {
+    width: 10%;
+    margin: 0px 23px;
+  }
+  .pict1 {
+    display: flex;
+    height: 100vh;
+  }
+  #About .container .row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 200px;
+  }
+  #About .container .row .abt {
+    width: 50%;
+  }
+  #About .container .row .abt p {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+#Testimonials .container .row {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#Socials .container .row {
+  flex-direction: row;
+  justify-content: space-between;
+}
+#Socials .container .row h2 {
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+#Socials .container .row .tag {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+footer {
+  margin-top: 40vh;
+  height: 45vh;
+  width: 100%;
+  background-color: rgb(116, 34, 150);
+}
+footer .container {
+  width: 100%;
+  flex-direction: column;
+}
+footer .container .row {
+  display: flex;
+  padding-top: 50px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #About {
+    height: auto;
+    padding-top: 80px !important;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
