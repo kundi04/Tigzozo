@@ -3,49 +3,42 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/Assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Assets/css/style.css">
     <link rel="stylesheet" href="/Assets/fonts/fonts.css">
-    <title>Document</title>
+    <title>TIGZOZO MEDIA</title>
 </head>
 
 <body>
-    <!--nav-->
-    <!-- <nav class="phone-nav">
-<img src="/Assets/images/logo dark.png" alt="" class="logo">
-<div class="hamburger" id="ham">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-</div>
-</nav> -->
-
-
-
-    <nav class="navbar  navbar-expand-md navbar-light  pc-nav" id="nav">
+    <nav class="navbar navbar-expand-md " id="nav">
         <div class="container">
-            <div class="flex-container">
+            <a class="navbar-brand" href="#">
                 <img src="/Assets/images/logo dark.png" alt="">
-                <ul>
-                    <li><a href="#About us">About us</a></li>
-                    <li><a href="#Services">Services <img src="/Assets/images/Icon material-keyboard-arrow-down.png"
-                                alt="" width="10vh"></a></li>
-                    <li><a href="#Testimonials">Testimonials</a></li>
-
-
-                    <button
-                        style="border: none; margin-left: 40px; margin-top: -8px; background-color: transparent ; cursor: pointer;"
-                        id="darkmode"> <img src="/Assets/images/Vector.png" alt="" width="30vh"></button>
-
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#AboutUs">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Testimonials">Testimonials</a>
+                    </li>
                 </ul>
+                <button id="darkmode" style="border: none; margin-left: 40px; background-color: transparent; cursor: pointer;">
+                    <img src="/Assets/images/Vector.png" alt="" width="30vh">
+                </button>
             </div>
         </div>
     </nav>
-    <!--end of nav-->
-
-
+    
+    
     <section id="hero">
         <div class="container">
             <div class="row">
@@ -262,11 +255,11 @@
             <div class="row">
                 <div class="col-md-6 part1">
                     <h2>What our happy clients say about Tigzozo media</h2>
-                    <img src="/Assets/images/testimonial 1.png" alt="" width="450px"
+                    <img class="testpic" src="/Assets/images/testimonial 1.png" alt="" width="450px"
                         style="margin-top: 30px; margin-left: 100px;">
                     <h3>Tendai and Farai</h3>
-                    <p class="pone">Co-founders at ABC company</p>
-                    <p class="ptwo">“ The team at Tigzozo took the time
+                    <p class="pone ">Co-founders at ABC company</p>
+                    <p class="ptwo ">“ The team at Tigzozo took the time
                         to understand who we are as a company
                         and gave us a few amazing marketing
                         plans to choose from. We
@@ -277,9 +270,9 @@
 
                 <div class="col-md-6 part2">
                     <img src="/Assets/images/testimonial 2.png" alt="" width="400px" style="margin-left: 60px;">
-                    <h3>Miranda</h3>
-                    <p class="pone">Bride</p>
-                    <p class="ptwo">“ The team at Tigzozo took the time
+                    <h3 class="para">Miranda</h3>
+                    <p class="pone para">Bride</p>
+                    <p class="ptwo para">“ The team at Tigzozo took the time
                         to understand who we are as a couple
                         and gave us a few amazing marketing
                         plans to choose from. We
@@ -295,93 +288,80 @@
 
 
     <!-- socials -->
-    <section id="Socials">
-        <div class="container">
-            <div class="row">
-                <h2 style="font-size: 45px;font-weight: bold;">As seen on <i
-                        style="font-family: gregular; font-size: 45px;">Instagram</i></h2>
-                <div class="col-md-2 pics">
-                    <img class="pic2" src="/Assets/images/social1.png" alt="" style="margin-left: 16px;">
-                </div>
-
+ <section id="Socials">
+    <div class="container">
+        <div class="row">
+            <h2>As seen on <i style="font-family: gregular;">Instagram</i></h2>
+            <div class="pics">
                 <div class="col-md-2">
-                    <img class="pic1" src="/Assets/images/social2.png" alt="" style="margin-top: 100px;">
+                    <img class="pic2" src="/Assets/images/social1.png" alt="">
                 </div>
-
                 <div class="col-md-2">
-                    <img class="pic1" src="/Assets/images/social3.png" alt="">
+                    <img class="pic1" src="/Assets/images/social2.png" alt=""style="margin-top: 50px;">
                 </div>
-
                 <div class="col-md-2">
-                    <img class="pic1" src="/Assets/images/social4.png" alt="" style="margin-top: 100px;">
+                    <img class="pic1 pp" src="/Assets/images/social3.png" alt="" >
                 </div>
-
                 <div class="col-md-2">
-                    <img class="pic1" src="/Assets/images/social5.png" alt="">
+                    <img class="pic1" src="/Assets/images/social4.png" alt="" style="margin-top: 50px;">
                 </div>
-
                 <div class="col-md-2">
-                    <img class="pic1" src="/Assets/images/social6.png" alt="" style="margin-top: 100px;">
+                    <img class="pic1" src="/Assets/images/social5.png" alt=""  >
                 </div>
-
-                <p class="tag">#Tigzozo</p>
-                <button style="color: white;">Follow us</button>
-            </div>
-        </div>
-
-    </section>
-
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 part1">
-                    <img src="/Assets/images/logo 1.png" alt="">
-                    <p class="p1"> &copy Copyright Tigzozo media 2022.
-                        All rights reserved.</p>
-                    <img src="/Assets/images/Icon awesome-facebook-f 1.png" alt="" width="20vh">
-                    <img src="/Assets/images/Icon awesome-instagram 1.png" alt="" width="30vh"
-                        style="margin-left: 20px;">
-
-                </div>
-
-                <div class="col-md-3 part2">
-                    <h3>About us</h3>
-                    <hr>
-                    <ul>
-                        <li>Our story</li>
-                        <li>Our team</li>
-                        <li>Testimonials</li>
-                        <li>COVID-19 update</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3 part3">
-                    <h3>Here to help</h3>
-                    <hr>
-                    <ul>
-                        <li>Contact us</li>
-                        <li>Book a session</li>
-                        <li>Payment</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3 part4">
-                    <h3>Get in touch</h3>
-                    <hr>
-                    <ul>
-                        <li> <img src="/Assets/images/Icon material-call.png" alt="" style="width: 3vh;"> Contact us
-                        </li>
-                        <li> <img src="/Assets/images/Icon material-email.png" alt="" style="width: 3vh;">
-                            john@tigzozomedia.com</li>
-                        <li> <img src="/Assets/images/Icon metro-location.png" alt="" style="width: 3vh;"> 132 East
-                            street Avondale, Harare</li>
-                    </ul>
+                <div class="col-md-2">
+                    <img class="pic1" src="/Assets/images/social6.png" alt="" style="margin-top: 50px;">
                 </div>
             </div>
+            <p class="tag">#Tigzozo</p>
+            <button>Follow us</button>
         </div>
+    </div>
+</section>
 
-    </footer>
+
+<footer id="foot">
+    <div class="container">
+        <div class="row socipic">
+            <div class="col-md-3 part1">
+                <img src="/Assets/images/logo 1.png" alt="">
+                <p class="p1">&copy Copyright Tigzozo media 2022. All rights reserved.</p>
+                <img src="/Assets/images/Icon awesome-facebook-f 1.png" alt="" width="20vh">
+                <img src="/Assets/images/Icon awesome-instagram 1.png" alt="" width="30vh" style="margin-left: 20px;">
+            </div>
+
+            <div class="col-md-3 part2">
+                <h3>About us</h3>
+                <hr>
+                <ul>
+                    <li>Our story</li>
+                    <li>Our team</li>
+                    <li>Testimonials</li>
+                    <li>COVID-19 update</li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 part3">
+                <h3>Here to help</h3>
+                <hr>
+                <ul>
+                    <li>Contact us</li>
+                    <li>Book a session</li>
+                    <li>Payment</li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 part4">
+                <h3>Get in touch</h3>
+                <hr>
+                <ul>
+                    <li><img src="/Assets/images/Icon material-call.png" alt="" style="width: 3vh;"> Contact us</li>
+                    <li><img src="/Assets/images/Icon material-email.png" alt="" style="width: 3vh;"> john@tigzozomedia.com</li>
+                    <li><img src="/Assets/images/Icon metro-location.png" alt="" style="width: 3vh;"> 132 East street Avondale, Harare</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script>
         var darkmode = document.getElementById("darkmode");
@@ -393,8 +373,12 @@
         togglebtn.onclick = function () {
             document.card.classList.toggle("overlay");
         };
-    </script>
 
+
+    </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 

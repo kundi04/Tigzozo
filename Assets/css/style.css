@@ -151,30 +151,56 @@ body {
 /*nav*/
 nav {
   height: 10vh;
-  display: flex;
   width: 100%;
-  padding: 0 100px;
+  padding: 0 50px;
   margin-top: 20px;
 }
-nav ul {
+nav .navbar {
   display: flex;
-  margin-top: -60px;
-  position: absolute;
-  right: 250px;
+  align-items: center;
 }
-nav ul li {
-  list-style: none;
+nav .navbar .logo {
+  width: 100px;
+  margin-right: 20px;
 }
-nav ul li a {
-  text-decoration: none;
+nav .navbar .navbar-toggler {
+  border: none;
+  margin-left: auto;
+}
+nav .navbar .navbar-collapse .navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+nav .navbar .navbar-collapse .navbar-nav .nav-link {
   color: var(--secondary);
   font-size: 18px;
-  padding-left: 50px;
   font-family: regular;
-  position: relative;
+  padding: 15px;
 }
-nav ul li a:hover {
+nav .navbar .navbar-collapse .navbar-nav .nav-link:hover {
   color: purple;
+}
+nav .navbar .navbar-collapse .navbar-nav .btn-transparent {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  nav .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  nav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .navbar-collapse .navbar-nav .nav-link {
+    padding: 10px 20px;
+    width: 100%;
+  }
 }
 
 /*end of nav*/
@@ -252,6 +278,30 @@ nav ul li a:hover {
   margin-top: 80px;
 }
 
+@media (max-width: 768px) {
+  #hero {
+    margin-left: 100px;
+  }
+  #hero .container .row .txt h1 {
+    width: 80vh;
+    font-size: 45px;
+  }
+  #hero .container .row .txt p {
+    width: 80vh;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  #hero .container .row .txt .btns {
+    display: flex;
+  }
+  #hero .container .row .txt .btns .btn2 {
+    height: 70px;
+  }
+  #hero .container .row .pict1 {
+    width: 50px;
+    margin-left: -40px;
+  }
+}
 #About {
   height: auto !important;
 }
@@ -320,6 +370,50 @@ nav ul li a:hover {
   border-style: none;
 }
 
+@media (max-width: 768px) {
+  #About {
+    margin-bottom: 100px;
+  }
+  #About .container .row {
+    margin-top: 400px;
+  }
+  #About .container .row h2, #About .container .row p {
+    margin: 0px 55px;
+  }
+  #About .container .row .about-images {
+    margin-left: 175px;
+  }
+  #About .container .row .about-images .img {
+    width: 300px;
+    height: 300px;
+  }
+  #About .container .row .about-images #im2 {
+    margin-left: 40px;
+    margin-top: 5px !important;
+    margin-bottom: 50px;
+  }
+  #About .container .row .abt2 {
+    margin-left: 10px;
+  }
+  #About .container .row .abt2 .video-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-bottom: 50%;
+    overflow: hidden;
+  }
+  #About .container .row .abt2 p {
+    width: 100%;
+    margin-left: 400px;
+    margin-top: -160px;
+  }
+  #About .container .row .abt2 img {
+    margin-left: 40px;
+  }
+  #About .container .row .abt2 button {
+    margin-left: 400px;
+  }
+}
 #title {
   font-size: 25px;
   font-family: bold;
@@ -402,6 +496,14 @@ ol li {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  #title h2 {
+    font-size: 20px !important;
+  }
+  .card-container {
+    margin-left: 480px;
+  }
+}
 #Testimonials {
   height: 100vh;
   width: 100%;
@@ -465,14 +567,32 @@ ol li {
   font-size: 18px;
 }
 
+@media (max-width: 768px) {
+  #Testimonials .container .row .part1 h2 {
+    margin-left: 60px;
+  }
+  #Testimonials .container .row .part1 img {
+    margin-left: 10px !important;
+  }
+  #Testimonials .container .row .part2 img {
+    margin-top: -200px;
+    margin-left: 520px !important;
+  }
+  #Testimonials .container .row .part2 h3, #Testimonials .container .row .part2 p {
+    width: 40vh;
+    margin-top: -300px;
+    margin-left: 520px !important;
+  }
+}
 #Socials {
-  height: 100vh;
+  height: auto;
   margin-top: 50px;
 }
 #Socials .container .row {
   display: flex !important;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 #Socials .container .row h2 {
   text-align: center;
@@ -482,15 +602,21 @@ ol li {
   margin-bottom: 50px;
   color: var(--secondary);
 }
-#Socials .container .row h2 .pics .pic1 {
-  width: 300px;
+#Socials .container .row .pics {
+  display: flex;
+  justify-content: center;
+}
+#Socials .container .row .pics .pic1, #Socials .container .row .pics .pic2 {
+  width: 180px;
+  margin: 5px;
+  flex-shrink: 0;
 }
 #Socials .container .row .tag {
-  margin-top: 80px;
+  margin-top: 40px;
   color: var(--secondary);
   font-family: regular;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 #Socials .container .row button {
@@ -500,24 +626,71 @@ ol li {
   font-size: 16px;
   border: none;
   margin-top: 20px;
-  margin-left: 510px;
-  width: 20vh;
+  width: 60%;
   height: 8vh;
+  display: block;
+  margin: 20px auto;
+}
+@media (max-width: 768px) {
+  #Socials .container .row .pics {
+    margin-left: 540px;
+  }
+  #Socials .container .row .pics .pic1, #Socials .container .row .pics .pic2 {
+    width: 140px;
+  }
+  #Socials .container .row h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #Socials .container .row .tag {
+    margin-left: 550px;
+    font-size: 18px;
+    margin-top: 60px;
+  }
+  #Socials .container .row button {
+    margin-left: 550px;
+    font-size: 14px;
+    width: 80%;
+    height: 6vh;
+  }
 }
 
 footer {
   margin-top: 40vh;
-  height: 45vh;
+  height: 100vh;
+  min-height: 20vh;
   background-color: rgb(116, 34, 150);
+  padding: 20px 0;
 }
 footer .container {
   width: 100%;
 }
 footer .container .row {
   display: flex;
-  padding-top: 50px;
+  flex-wrap: wrap;
 }
-footer .container .row .part1 .p1 {
+footer .container .row .part1, footer .container .row .part2, footer .container .row .part3, footer .container .row .part4 {
+  flex: 1;
+  padding: 15px;
+}
+footer .container .row .part1 h3, footer .container .row .part2 h3, footer .container .row .part3 h3, footer .container .row .part4 h3 {
+  color: white;
+  font-family: regular;
+  font-weight: bold;
+  font-size: 20px;
+}
+footer .container .row .part1 hr, footer .container .row .part2 hr, footer .container .row .part3 hr, footer .container .row .part4 hr {
+  color: white;
+  width: 20vh;
+}
+footer .container .row .part1 li, footer .container .row .part2 li, footer .container .row .part3 li, footer .container .row .part4 li {
+  color: white;
+  font-family: regular;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 6px 0px;
+}
+footer .container .row .part1 .p1, footer .container .row .part2 .p1, footer .container .row .part3 .p1, footer .container .row .part4 .p1 {
   margin-top: 20px;
   margin-bottom: 20px;
   color: white;
@@ -525,139 +698,33 @@ footer .container .row .part1 .p1 {
   font-weight: normal;
   font-size: 16px;
 }
-footer .container .row .part2 h3 {
-  color: white;
-  font-family: regular;
-  font-weight: bold;
-  font-size: 20px;
-}
-footer .container .row .part2 hr {
-  color: white;
-  width: 20vh;
-}
-footer .container .row .part2 li {
-  color: white;
-  font-family: regular;
-  font-weight: normal;
-  font-size: 16px;
-  padding: 6px 0px;
-}
-footer .container .row .part3 h3 {
-  color: white;
-  font-family: regular;
-  font-weight: bold;
-  font-size: 20px;
-}
-footer .container .row .part3 hr {
-  color: white;
-  width: 20vh;
-}
-footer .container .row .part3 li {
-  color: white;
-  font-family: regular;
-  font-weight: normal;
-  font-size: 16px;
-  padding: 6px 0px;
-}
-footer .container .row .part4 h3 {
-  color: white;
-  font-family: regular;
-  font-weight: bold;
-  font-size: 20px;
-}
-footer .container .row .part4 hr {
-  color: white;
-  width: 20vh;
-}
-footer .container .row .part4 li {
-  color: white;
-  font-family: regular;
-  font-weight: normal;
-  font-size: 16px;
-  padding: 6px 0px;
-}
 
-/*
-####################################################
-M E D I A  Q U E R I E S
-####################################################
-*/
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Bootstrap 4 breakpoints
-*/
-/* 
-Extra small devices (portrait phones, less than 576px) 
-No media query since this is the default in Bootstrap because it is "mobile first"
-*/
-/* Small devices (landscape phones, 576px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {
-  .Ione {
-    width: 10%;
-    margin: 0px 23px;
+@media (max-width: 768px) {
+  #foot {
+    height: 200% !important;
+    width: 106.8vh !important;
   }
-  .pict1 {
-    display: flex;
-    height: 100vh;
+  #foot .row {
+    flex-direction: column;
+    text-align: left;
   }
-  #About .container .row {
-    flex-direction: row;
+  #foot .row .part1, #foot .row .part2, #foot .row .part3, #foot .row .part4 {
+    font-size: 50px;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 200px;
+    text-align: left;
+    padding: 20px 40px;
   }
-  #About .container .row .abt {
-    width: 50%;
+  #foot .row .part1 img {
+    width: 20px;
+    margin: 5px;
   }
-  #About .container .row .abt p {
-    width: 100%;
-    font-size: 20px;
+  #foot .row .part1 .p1 {
+    font-size: 30px;
   }
-}
-#Testimonials .container .row {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-#Socials .container .row {
-  flex-direction: row;
-  justify-content: space-between;
-}
-#Socials .container .row h2 {
-  font-size: 30px;
-  margin-bottom: 70px;
-}
-#Socials .container .row .tag {
-  margin-top: 100px;
-  font-size: 30px;
-}
-
-footer {
-  margin-top: 40vh;
-  height: 45vh;
-  width: 100%;
-  background-color: rgb(116, 34, 150);
-}
-footer .container {
-  width: 100%;
-  flex-direction: column;
-}
-footer .container .row {
-  display: flex;
-  padding-top: 50px;
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  #About {
-    height: auto;
-    padding-top: 80px !important;
+  #foot .row h3 {
+    font-size: 38px;
   }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Custom media queries
-*/
-/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
+  #foot .row li {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */
